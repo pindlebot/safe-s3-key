@@ -25,8 +25,15 @@ test('handle special characters 4', () => {
   expect(safeKey(input)).toMatch(output)
 })
 
-test('handle special characters 4', () => {
+test('handle special characters 5', () => {
   let input = 'name&$@=;:+ ,?name'
   let output = 'namename'
+  expect(safeKey(input)).toMatch(output)
+})
+
+
+test('handle different types 1', () => {
+  let input = 555
+  let output = '555'
   expect(safeKey(input)).toMatch(output)
 })

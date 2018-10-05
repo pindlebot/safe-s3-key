@@ -2,7 +2,7 @@ const crypto = require('crypto')
 
 module.exports = (name) => {
   if (typeof name !== 'string') {
-    if (name.hasOwnProperty('toString')) {
+    if (name.constructor.prototype.hasOwnProperty('toString')) {
       name = name.toString()
     } else {
       throw new Error('argument must be a string')
