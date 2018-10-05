@@ -11,6 +11,6 @@ module.exports = (name) => {
   if (name.startsWith('/')) {
     name = name.slice(1, name.length)
   }
-  let filename = decodeURIComponent(name).replace(/[^A-Za-z0-9!-_.*'()]/g, '')
+  let filename = decodeURIComponent(name).replace(/[^A-Za-z0-9!\-_.*'()]/g, '')  
   return filename || crypto.randomBytes(10).toString('hex')
 }
