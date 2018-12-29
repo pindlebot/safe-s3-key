@@ -6,6 +6,10 @@
   "scripts": {
     "test": "jest"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/unshift/safe-s3-key.git"
+  },
   "devDependencies": {
     "jest": "^23.6.0"
   }
